@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+    <title>Hex Tiles</title>
+  </head>
+  <body style="text-align: center; margin: 0px; overflow: hidden">
+    <canvas id="unity-canvas" style="width: 100vw; height: 100vh; background: #182028"></canvas>
+    <script src="Build/WebGL.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/WebGL.data",
+        frameworkUrl: "Build/WebGL.framework.js",
+        codeUrl: "Build/WebGL.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Valgo",
+        productName: "Hex Tiles",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
